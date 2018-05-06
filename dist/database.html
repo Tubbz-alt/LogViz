@@ -9,7 +9,7 @@
 
   <!-- navigation bar -->
   <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
-    <a class="navbar-brand col-sm-3 col-md-2 ml-0" href="index.html">LogViz</a>
+    <a class="navbar-brand col-sm-3 col-md-2 ml-0" href="#">LogViz</a>
   </nav>
 
   <div class="container-fluid">
@@ -18,13 +18,13 @@
         <div class="sidebar-sticky">
           <ul class="nav flex-column">
             <li class="nav-item">
-              <a class="nav-link disabled" href="#">
+              <a class="nav-link active" href="index.html">
                 <span data-feather="activity"></span>
                 Dashboard <span class="sr-only">(current)</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="database.html">
+              <a class="nav-link disabled" href="#">
                 <span data-feather="database"></span>
                 Database
               </a>
@@ -41,7 +41,7 @@
 
       <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
         <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-          <h1 class="h2">Database</h1>
+          <h1 class="h2">Log Timeline</h1>
         </div>
 
         <canvas class="my-4 w-100" id="mainChart" width="900" height="380"></canvas>
@@ -51,9 +51,7 @@
 
   <!-- JS -->
   <script src="ipp_logviz.bundle.js"></script>
-  <script src="js/plot_management.js"></script>
-  <script>
-      var mainChart = Create_Chart();
-  </script>
+  <script src="js/database_management.js"></script>
+  
 </body>
 </html>
