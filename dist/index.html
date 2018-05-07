@@ -41,7 +41,7 @@
 
       <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
         <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-          <h1 class="h2">Database</h1>
+          <h1 class="h2">Log Timeline</h1>
         </div>
 
         <canvas class="my-4 w-100" id="mainChart" width="900" height="380"></canvas>
@@ -50,10 +50,13 @@
   </div>
 
   <!-- JS -->
-  <script src="ipp_logviz.bundle.js"></script>
-  <script src="js/plot_management.js"></script>
+  <script src="/ipp_logviz.bundle.js"></script>
+  <script src="/js/plot_management.js"></script>
   <script>
       var mainChart = Create_Chart();
+
+      // Send initial request
+      
   </script>
 </body>
 </html>

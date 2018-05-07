@@ -4,6 +4,7 @@
   "description": "Log Visualization Tool",
   "main": "src/index.js",
   "scripts": {
+    "start": "node src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,6 +23,7 @@
     "chartjs": "^0.3.24",
     "chartjs-plugin-zoom": "^0.6.3",
     "exports-loader": "^0.7.0",
+    "express": "^4.16.3",
     "feather-icons": "^4.7.0",
     "jquery": "^3.3.1",
     "node-sass": "^4.9.0",
