@@ -3,6 +3,7 @@ const app = express()
 const path = require('path');
 const dist = path.join(__dirname, '../dist');
 
+const db_mgr = require('./db/database_manager');
 
 app.get('/',function(req,res){
     console.log('Sending Index');
