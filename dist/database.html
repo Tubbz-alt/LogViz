@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Log-Visualizer</title>
-  <link rel="stylesheet" type="text/css" href="css/main.css">
+  
 </head>
 <body>
 
@@ -41,17 +41,49 @@
 
       <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
         <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-          <h1 class="h2">Log Timeline</h1>
+          <h1 class="h2">Database Configuration</h1>
         </div>
 
-        <canvas class="my-4 w-100" id="mainChart" width="900" height="380"></canvas>
+        <ul class="nav nav-pills nav-fill">
+          <li class="active"><a data-toggle="tab" href="#database_overview">Overview</a></li>
+          <li><a data-toggle="tab" href="#database_entries">Entries</a></li>
+        </ul>
+        
+        <div class="tab-content">
+          <div id="database_overview" class="tab-pane fade">
+            <h3>Database Overview</h3>
+            <table class="table" id="database_info_tbl" >
+              <tbody>
+                <tr>
+                  <td>Database Path:</td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div id="database_entries" class="tab-pane fade">
+            <h3>Database Entries</h3>
+          </div>
+        </div>
+
       </main>
     </div>
   </div>
 
   <!-- JS -->
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
   <script src="ipp_logviz.bundle.js"></script>
   <script src="js/database_management.js"></script>
   
+  <script>
+    // Initialize Database Tables
+    Initialize_Database_Info_Tables();
+  </script>
+
 </body>
 </html>
