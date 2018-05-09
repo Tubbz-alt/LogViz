@@ -3,24 +3,25 @@
 <head>
   <meta charset="utf-8">
   <title>Log-Visualizer</title>
-  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
 
   <!-- navigation bar -->
-  <nav class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+  <nav class="navbar navbar-expand navbar-dark fixed-top">
     <a class="navbar-brand col-sm-3 col-md-2 ml-0" href="#">LogViz</a>
   </nav>
 
   <div class="container-fluid">
     <div class="row">
-      <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+      <nav class="col-md-1 d-md-block sidebar">
         <div class="sidebar-sticky">
           <ul class="nav flex-column">
             <li class="nav-item">
               <a class="nav-link active" href="index.html">
                 <span data-feather="activity"></span>
-                Dashboard <span class="sr-only">(current)</span>
+                Dashboard
               </a>
             </li>
             <li class="nav-item">
@@ -45,39 +46,24 @@
         </div>
 
         <ul class="nav nav-pills nav-fill">
-          <li class="active"><a data-toggle="tab" href="#database_overview">Overview</a></li>
-          <li><a data-toggle="tab" href="#database_entries">Entries</a></li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Overview</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Entries</a>
+          </li>
         </ul>
         
-        <div class="tab-content">
-          <div id="database_overview" class="tab-pane fade">
-            <h3>Database Overview</h3>
-            <table class="table" id="database_info_tbl" >
-              <tbody>
-                <tr>
-                  <td>Database Path:</td>
-                  <td></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div id="database_entries" class="tab-pane fade">
-            <h3>Database Entries</h3>
-          </div>
-        </div>
-
       </main>
-    </div>
+    </div><!-- End of Row Class -->
   </div>
 
   <!-- JS -->
-  <link rel="stylesheet" type="text/css" href="css/main.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-  <script src="ipp_logviz.bundle.js"></script>
   <script src="js/database_management.js"></script>
   
   <script>

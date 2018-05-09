@@ -6,9 +6,18 @@ Generic Log Visualization Tool
 Installation 
 ------------
 
-Setup Python Virtual Environment
+Mongo DB Notes
+* https://docs.mongodb.com/manual/mongo/
 
-    python -m venv venv
+__RHEL__ 
+* https://www.softwarecollections.org/en/scls/rhscl/rh-mongodb34/
 
-    pip install Flask
+Installing the Database
+
+    yum install rh-mongodb34 rh-mongodb34-mongodb-server
+
+Starting the database
+
+    scl enable rh-mongodb34 bash
+    mongod --dbpath=/data/logviz --logpath=/data/logviz/logviz.log --bind_ip=0.0.0.0 -vv
 

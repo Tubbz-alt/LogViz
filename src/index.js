@@ -3,7 +3,11 @@ const app = express()
 const path = require('path');
 const dist = path.join(__dirname, '../dist');
 
-const db_mgr = require('./db/database_manager');
+const config = require('./config.js');
+const database_manager = require('./db/database_manager');
+
+// Create Database-Manager
+const db_mgr = new database_manager(config);
 
 app.get('/',function(req,res){
     console.log('Sending Index');
